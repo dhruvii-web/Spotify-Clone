@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Your favourite music is here</title>
+  <link rel="stylesheet" href="styleold.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="brand">
+        <img src="Spotify Logo.png" alt="Spotify" /> Spotify
+      </li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songList">
+      <h1>Best of NCS - No Copyright Sounds</h1>
+      <div class="songItemContainer">
+        <div class="songItem">
+          <img src="cover/Babycoverart.jpg" alt="1" />
+          <span class="songName">Baby</span>
+          <span class="songlistplay"><span class="timestamp">03:31 <i id="0" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/kesariya-cover.jpg" alt="2" />
+          <span class="songName">Kesariya</span>
+          <span class="songlistplay"><span class="timestamp">04:28 <i id="1" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/kukkad-cover.jpg" alt="3" />
+          <span class="songName">Kukkad</span>
+          <span class="songlistplay"><span class="timestamp">04:21 <i id="2" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/4.jpg" alt="4" />
+          <span class="songName">Malang Sajna</span>
+          <span class="songlistplay"><span class="timestamp">02:41 <i id="3" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/o rangrez-cover.jpg" alt="5" />
+          <span class="songName">O Rangrez</span>
+          <span class="songlistplay"><span class="timestamp">06:25 <i id="4" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/peeloon-cover.jpg" alt="6" />
+          <span class="songName">Pee Loon</span>
+          <span class="songlistplay"><span class="timestamp">04:47 <i id="5" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/perfect-cover.jpg" alt="7" />
+          <span class="songName">Perfect</span>
+          <span class="songlistplay"><span class="timestamp">04:23 <i id="6" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/thousand-years-cover.jpg" alt="8" />
+          <span class="songName">Thousand Years</span>
+          <span class="songlistplay"><span class="timestamp">04:46 <i id="7" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/wodekhnemei-cover.jpg" alt="9" />
+          <span class="songName">Voh Dekhney Mei</span>
+          <span class="songlistplay"><span class="timestamp">01:21 <i id="8" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/10.jpg" alt="10" />
+          <span class="songName">Na Jaana</span>
+          <span class="songlistplay"><span class="timestamp">03:24 <i id="9" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="songBanner"></div>
+  </div>
+
+  <!-- Bottom player -->
+  <div class="bottom">
+    <button id="startVoiceBtn" style="position:absolute; left:20px; bottom:10px; padding:6px 12px; font-size:14px;">
+🎙️ Enable Voice
+</button>
+
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" />
+
+    <div id="timeDisplay" style="color: white; font-size: 14px; text-align: center;">
+      00:00 / 00:00
+    </div>
+
+    <div class="icons">
+      <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+      <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+      <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+    </div>
+
+    <div class="songInfo">
+      <img src="music gif.gif" width="42px" alt="" id="gif" />
+      <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+    </div>
+
+    <!-- ✅ Only one Autoplay toggle now -->
+    <div class="autoplayToggle" style="position: absolute; right: 20px; bottom: 10px; font-size: 14px;">
+      <label style="cursor: pointer;">
+        <input type="checkbox" id="autoplayCheck" style="transform: scale(1.2); margin-right: 6px;" />
+        Autoplay
+      </label>
+    </div>
+  </div>
+
+  <script src="scriptold.js"></script>
+</body>
+</html>
